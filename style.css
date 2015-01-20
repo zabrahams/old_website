@@ -1,0 +1,16 @@
+/* Reset */
+
+header, body, section, h1, h2, h3, p, ul, li, a {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul, li {
+  list-style: none;
+}
