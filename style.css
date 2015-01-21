@@ -14,3 +14,89 @@ header, body, section, h1, h2, h3, p, ul, li, a {
 ul, li {
   list-style: none;
 }
+
+/* general styles */
+
+.group::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+section.hide {
+  display: none;
+}
+
+section.vanish {
+  opacity: 0;
+  transition: opacity 400ms linear;
+  z-index: 0;
+}
+
+.show {
+  display: block;
+}
+
+/* page layout */
+
+.head-container {
+  display: block;
+}
+
+.page-header {
+  background: #ddd;
+  display: block;
+  height: 300px;
+  width: 800px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+}
+
+.main {
+  margin: auto;
+  position: relative;
+  height: 500px;
+  width: 800px;
+  background: #266;
+  overflow: hidden;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+
+}
+
+.page {
+  display: block;
+  float: left;
+  height: 650px;
+  width: 1000px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+}
+
+.about {
+  top: 0;
+  left: 0;
+}
+
+.projects {
+  top: 0;
+  left: 1000px;
+}
+
+.out {
+  left: -1000px;
+  transition: left 500ms linear;
+}
+
+.in {
+  left: 0;
+  transition: left 500ms linear;
+}
+
+.reset {
+  left: 1000px;
+}

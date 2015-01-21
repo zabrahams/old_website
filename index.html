@@ -2,14 +2,95 @@
 <html>
   <head>
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./jQuery.js"></script>
+    <script src="./movement.js"></script>
     <meta charset="utf-8">
-    <title>Zachary Abraham</title>
+    <title>Zachary Abrahams</title>
   </head>
   <body>
-    <header>
-      <h1></h1>
-    </header>
+      <section class="head-container group">
+      <header class="page-header">
+        <h1>Zachary Abrahams</h1>
+        <nav class="header-nav">
+          <a href="#" id="about-link" data-page="about">about</a>
+          <a href="#" id="projects-link" data-page="projects">projects</a>
+        </nav>
+      </header>
+    </section>
 
+    <section class="main">
+
+      <section class="about page in">
+        <p>I am a web developer with expertise in Ruby on Rails and Backbone.js. I learned web development at <a href="http://appacademy.io">appacademy</a>. I also have a PhD in Philosophy of Language from Cornell University. I'm interested in... and ...</p>
+
+        <p>I can be reached at zachabrahams@gmail.com.</p>
+      </section>
+
+
+      <section class="projects page">
+        <header class="project-header">Recent Projects</header>
+        <h2>All my projects are available at <a href="http://github.com/zachabrahams">GitHub</a></h2>
+
+        <ul>
+          <li>
+            <h3>
+              <a href="#" class= "project-link" data-page="feedme">
+                FeedMe
+              </a>
+            </h3>
+            <a href="http://feed--me.com">Live</a>
+            <a href="http://github.com/zachabrahams/FeedMe">GitHub</a>
+          </li>
+          <li>
+            <h3><a href="#" class= "project-link" data-page="asteroids">
+              Asteroids
+            </a>
+          </h3>
+            <a href="#">Live</a>
+            <a href="http://github.com/zachabrahams/Asteroids">GitHub</a>
+          </li>
+          <li>
+          <h3><a href="#" class= "project-link" data-page="proactive-record">
+            ProActiveRecord
+            </a>
+          </h3>
+            <a href="#">GitHub</a>
+
+          </li>
+          <li>
+            <h3>
+              <a href="#" class= "project-link" data-page="chess">
+                Chess
+              </a>
+            </h3>
+            <a href="http://github.com/zachabrahams/chess">GitHub</a>
+
+          </li>
+          </ul>
+
+      </section>
+
+      <section class="page project feedme hide">
+        <a href="#" id="back-link" data-page="back">back</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section class="page project asteroids hide">
+        <a href="#" id="back-link" data-page="back">back</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section class="page project proactive-record hide">
+        <a href="#" id="back-link" data-page="back">back</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section class="page project chess hide">
+        <a href="#" id="back-link" data-page="back">back</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+    </section>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,8 +103,5 @@
 
     </script>
 
-    <section class="contact">
-      Coming Soon!
-    </section>
   </body>
 </html>
