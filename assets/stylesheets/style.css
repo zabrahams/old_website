@@ -17,6 +17,14 @@ ul, li {
 
 /* general styles */
 
+img {
+  display: block;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+}
+
 .group::after {
   content: "";
   clear: both;
@@ -37,6 +45,19 @@ section.vanish {
   display: block;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+h4 {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
 /* page layout */
 
 .head-container {
@@ -47,7 +68,7 @@ section.vanish {
   background: #ddd;
   display: block;
   height: 300px;
-  width: 800px;
+  width: 900px;
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -58,8 +79,8 @@ section.vanish {
 .main {
   margin: auto;
   position: relative;
-  height: 500px;
-  width: 800px;
+  height: 550px;
+  width: 900px;
   background: #266;
   overflow: hidden;
   border-bottom-right-radius: 80px;
@@ -71,7 +92,7 @@ section.vanish {
   display: block;
   float: left;
   height: 650px;
-  width: 1000px;
+  width: 900px;
   position: absolute;
   z-index: 1;
   opacity: 1;
@@ -99,4 +120,19 @@ section.vanish {
 
 .reset {
   left: 1000px;
+}
+
+/* projects display page */
+
+.project-item {
+  display: block;
+  float: left;
+  width: 430px;
+  padding: 10px;
+  margin: auto;
+}
+
+.links {
+  display: block;
+  text-align: center;
 }

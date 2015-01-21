@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <script src="./jQuery.js"></script>
-    <script src="./movement.js"></script>
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" type="text/css">
+    <script src="./assets/vendor/jQuery.js"></script>
+    <script src="./assets/javascripts/movement.js"></script>
     <meta charset="utf-8">
     <title>Zachary Abrahams</title>
   </head>
@@ -28,45 +28,61 @@
 
 
       <section class="projects page">
-        <header class="project-header">Recent Projects</header>
-        <h2>All my projects are available at <a href="http://github.com/zachabrahams">GitHub</a></h2>
+        <h2 class="project-header">Projects</h2>
 
-        <ul>
-          <li>
+        <ul class="project-list group">
+
+          <li class="project-item">
             <h3>
               <a href="#" class= "project-link" data-page="feedme">
-                FeedMe
+                <img src="./assets/images/FeedMe1_crop.png">
+                <h4>FeedMe</h4>
               </a>
             </h3>
-            <a href="http://feed--me.com">Live</a>
-            <a href="http://github.com/zachabrahams/FeedMe">GitHub</a>
+            <div class="links">
+              <a href="http://feed--me.com">Live</a>
+              <a href="http://github.com/zachabrahams/FeedMe">GitHub</a>
+            </div>
           </li>
-          <li>
-            <h3><a href="#" class= "project-link" data-page="asteroids">
-              Asteroids
-            </a>
-          </h3>
-            <a href="#">Live</a>
-            <a href="http://github.com/zachabrahams/Asteroids">GitHub</a>
-          </li>
-          <li>
-          <h3><a href="#" class= "project-link" data-page="proactive-record">
-            ProActiveRecord
-            </a>
-          </h3>
-            <a href="#">GitHub</a>
 
+          <li class="project-item">
+            <h3>
+              <a href="#" class= "project-link" data-page="asteroids">
+                <img src="./assets/images/aster_crop3.png">
+                <h4>Asteroids</h4>
+              </a>
+            </h3>
+            <div class="links">
+              <a href="#">Live</a>
+              <a href="http://github.com/zachabrahams/Asteroids">GitHub</a>
+            </div>
           </li>
-          <li>
+
+          <li class="project-item">
+            <h3>
+              <a href="#" class="project-link" data-page="reactive-record">
+                <img src="./assets/images/active_wider_crop.png">
+                <h4>ReActiveRecord</h4>
+              </a>
+            </h3>
+            <div class="links">
+              <a href="#">GitHub</a>
+            </div>
+          </li>
+
+          <li class="project-item">
             <h3>
               <a href="#" class= "project-link" data-page="chess">
-                Chess
+                <img src="./assets/images/chess_crop.png">
+                <h4>Chess</h4>
               </a>
             </h3>
-            <a href="http://github.com/zachabrahams/chess">GitHub</a>
-
+            <div class="links">
+              <a href="http://github.com/zachabrahams/chess">GitHub</a>
+            </div>
           </li>
-          </ul>
+
+        </ul>
 
       </section>
 
@@ -80,7 +96,7 @@
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
 
-      <section class="page project proactive-record hide">
+      <section class="page project reactive-record hide">
         <a href="#" id="back-link" data-page="back">back</a>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
