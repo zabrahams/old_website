@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./assets/stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/vendor/font-awesome/css/font-awesome.css">
     <script src="./assets/vendor/jQuery.js"></script>
     <script src="./assets/javascripts/movement.js"></script>
     <meta charset="utf-8">
@@ -11,19 +13,41 @@
       <section class="head-container group">
       <header class="page-header">
         <h1>Zachary Abrahams</h1>
-        <nav class="header-nav">
-          <a href="#" id="about-link" data-page="about">about</a>
-          <a href="#" id="projects-link" data-page="projects">projects</a>
+        <nav class="header-nav group">
+          <a href="#" id="about-link" class="header-nav-item" data-page="about">about</a>
+          <a href="#" id="projects-link" class="header-nav-item" data-page="projects">projects</a>
         </nav>
+
+        <ul class="contacts group">
+
+          <li class="contact-item">
+            <a href="zachabrahams@gmail.com"><i class="fa fa-envelope"></i></a>
+          </li>
+
+          <li class="contact-item">
+            <a href="http://github.com/zachabrahams">  <i class="fa fa-github"></i></a>
+          </li>
+          <li class="contact-item">
+            <a href="http://www.linkedin.com/pub/zach-abrahams/b1/9a/654"><i class ="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+
       </header>
     </section>
 
     <section class="main">
 
-      <section class="about page in">
-        <p>I am a web developer with expertise in Ruby on Rails and Backbone.js. I learned web development at <a href="http://appacademy.io">appacademy</a>. I also have a PhD in Philosophy of Language from Cornell University. I'm interested in... and ...</p>
-
-        <p>I can be reached at zachabrahams@gmail.com.</p>
+      <section class="about page in group">
+        <section class="circles group">
+          <img  class="single-pic" src="./assets/images/zach.jpg">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </section>
+        <section class="about-section group">
+          <p class="about-para">I am a web developer with strong interests in both front-end and backend development. I'm interested in...</p>
+          <p class="about-para">I have expertise with Ruby on Rails and Backbone.js</p>
+          <p class="about-para">I learned web development at <a href="http://appacademy.io">appacademy</a> an intensive program that accepts < 5% of applicants.</p>
+          <p  class="about-para">I also have a PhD in Philosophy of Language from Cornell University.</p>
       </section>
 
 
