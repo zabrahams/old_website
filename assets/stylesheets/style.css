@@ -48,6 +48,8 @@ section.vanish {
 
 .show {
   display: block;
+  opacity: 1;
+  transition: opacity 400ms linear;
 }
 
 h2 {

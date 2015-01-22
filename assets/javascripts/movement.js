@@ -48,7 +48,9 @@
     $section = $("." + pageName);
     $old = $(".project-index");
 
-    $old.addClass("vanish");
+    $old
+      .addClass("vanish")
+      .removeClass("show");
     $section
       .removeClass("hide")
       .addClass("vanish");
@@ -56,7 +58,9 @@
       $old
         .addClass("hide")
         .removeClass("vanish");
-      $section.removeClass("vanish");
+      $section
+      .removeClass("vanish")
+      .addClass("show");
     })
   };
 
@@ -69,15 +73,20 @@
     $section = $(event.currentTarget).parents('.project');
     console.log($section);
 
-    $section.addClass("vanish");
-    $prev.
-      addClass("vanish")
+    $section
+      .addClass("vanish")
+      .removeClass("show");
+    $prev
+      .addClass("vanish")
       .removeClass("hide");
     $section.one("transitionend", function () {
       $section
         .addClass("hide")
         .removeClass("vanish");
-      $prev.removeClass("vanish");
+      console.log("start!");
+      $prev
+        .removeClass("vanish")
+        .addClass("show");
     })
   };
 
