@@ -3,36 +3,41 @@
     window.Move = {}
   }
 
+
   Move.slide = slide =  function (event) {
     var $anchor, pageName, $old, $section;
 
-    event.preventDefault();
-    $anchor = $(event.currentTarget);
-    pageName = $anchor.data("page");
-    $section = $("." + pageName);
-    $old = $('.in');
+    if (Move.sliding === false || typeof Move.sliding === "undefined") {
+      event.preventDefault();
+      $anchor = $(event.currentTarget);
+      pageName = $anchor.data("page");
+      $section = $("." + pageName);
+      $old = $('.in');
 
 
-    if (!($section === $old)) {
-      $old
-        .addClass("out")
-        .removeClass("in");
+      if (!($section === $old)) {
+        Move.sliding = true;
+        $old
+          .addClass("out")
+          .removeClass("in");
 
-      $section
-        .addClass("in")
-        .removeClass("reset")
-      console.log($old);
+        $section
+          .addClass("in")
+          .removeClass("reset")
 
-      $old.one("trasitionend", Move.reset($old));
+        window.setTimeout(function (){
+          Move.sliding = false;
+        }, 500);
+
+        $section.one("transitionend", function () {
+          $old
+            .removeClass("out")
+            .addClass("reset");
+        });
+      }
     }
   };
 
-  Move.reset = reset = function ($el) {
-    console.log("reseting?")
-    $el
-      .removeClass("out")
-      .addClass("reset");
-  };
 
   Move.fade = fade = function (event) {
     var $anchor, pageName, $section, $old;
@@ -41,8 +46,7 @@
     $anchor = $(event.currentTarget);
     pageName = $anchor.data('page');
     $section = $("." + pageName);
-    $old = $(".projects");
-    Move.$back = $old
+    $old = $(".project-index");
 
     $old.addClass("vanish");
     $section
@@ -61,9 +65,9 @@
     var $section, $prev;
 
     event.preventDefault();
-    $prev = Move.$back;
-    delete Move.$back;
-    $section = $(event.currentTarget).parent();
+    $prev = $(".project-index");
+    $section = $(event.currentTarget).parents('.project');
+    console.log($section);
 
     $section.addClass("vanish");
     $prev.
@@ -82,5 +86,5 @@
 $(function () {
   $("nav a").on("click", Move.slide);
   $("a.project-link").on("click", Move.fade);
-  $("a#back-link").on("click", Move.goBack);
+  $("a.back-link").on("click", Move.goBack);
 });

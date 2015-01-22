@@ -23,10 +23,11 @@ body {
 
 img {
   display: block;
-  height: 160px;
-  width: 240px;
+  height: 200px;
+  width: 200px;
   border-radius: 10px;
   margin: auto;
+  border-radius: 100px;
 }
 
 .group::after {
@@ -189,20 +190,20 @@ h1 {
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  background: #000;
+  background: #999;
   margin: 12px 30px;
 }
 
 .about-section {
   display: block;
   float: right;
-  margin: 40px 60px;
-  width: 400px;
+  margin: 90px;
+  width: 500px;
   font-size: 24px;
 }
 
 .about-para {
-  padding-bottom: 20px;
+  padding: 10px 0;
 }
 
 .about-para:after {
@@ -210,18 +211,24 @@ h1 {
   display: block;
   content: "\f013";
   text-align: center;
+  padding-top: 10px;
 }
 
 .about-para:last-child:after {
-  content: "";  
+  content: "";
 }
 
 /* projects display page */
 
+.project-index {
+  padding: 10px 60px;
+  width: 780px;
+}
+
 .project-item {
   display: block;
   float: left;
-  width: 430px;
+  width: 370px;
   padding: 10px;
   margin: auto;
 
@@ -230,4 +237,59 @@ h1 {
 .links {
   display: block;
   text-align: center;
+}
+
+.project-header {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 470px;
+  font-size: 48px;
+  font-weight: bold;
+
+}
+
+.project-text {
+  display: block;
+  width: 590px;
+  float: left;
+  padding: 20px 40px;
+}
+
+.back-link {
+  display: block;
+  float: right;
+  padding: 8px 20px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  font-size: 24px;
+  width: 50px;
+}
+
+.description {
+  display: block;
+  float: left;
+  margin: 20px 60px;
+  width: 500px;
+  font-size: 18px;
+}
+
+.feature-header {
+  font-size: 36px;
+}
+
+.feature-text {
+  font-size: 22px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.feature-text:before {
+  font-family: "FontAwesome";
+  content: "\f013";
+  margin-right: 5px;
 }
