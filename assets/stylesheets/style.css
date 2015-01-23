@@ -1,3 +1,12 @@
+/* Colors:
+
+  light grey: #DFDAB0;
+  lighter grey-green-blue: #6F9483;
+  mid grey-blue: #446165;
+  dark-purple: #2B2129;
+  lime: #AAB825; */
+
+
 /* Reset */
 
 header, body, section, h1, h2, h3, p, ul, li, a {
@@ -225,6 +234,7 @@ h1 {
   border-radius: 50%;
   background: #AAB825;
   margin: 12px 30px;
+
 }
 
 .about-section {
@@ -321,7 +331,7 @@ h1 {
   float: left;
   margin: 20px 60px;
   width: 500px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .feature-header {
@@ -329,18 +339,18 @@ h1 {
 }
 
 .feature-text {
-  font-size: 22px;
+  font-size: 18px;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 
 .feature-text:before {
   font-family: "FontAwesome";
   content: "\f013";
-  margin-right: 5px;
+  padding-right: 5px;
   color: #446165;
 }

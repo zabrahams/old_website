@@ -44,10 +44,9 @@
           <div class="circle"></div>
         </section>
         <section class="about-section group">
-          <p class="about-para">I am a web developer with strong interests in both front-end and backend development.</p>
-          <p class="about-para">I have expertise with Ruby on Rails and Backbone.js</p>
+          <p class="about-para">I am a soft developer fascinated with both front-end and backend web development. I have expertise with Ruby on Rails and Backbone.js</p>
           <p class="about-para">I learned web development at <a href="http://appacademy.io">appacademy</a> an intensive program that accepts < 5% of applicants.</p>
-          <p  class="about-para">I also have a PhD in Philosophy of Language from Cornell University.</p>
+          <p  class="about-para">I'm interested in work that has a real impact on the world.</p>
       </section>
     </section>
 
@@ -92,7 +91,7 @@
               </a>
             </h3>
             <div class="links">
-              <a href="#">GitHub</a>
+              <a href="https://github.com/zachabrahams/ReActiveRecord">GitHub</a>
             </div>
           </li>
 
@@ -122,12 +121,12 @@
         <section class="project-text group">
           <h3 class="project-header">FeedMe</h3>
           <a href="#" class="back-link" data-page="back">back</a>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="description">FeedMe is a collaborative news aggregator. Users can read, aggregate and categorize their favorite feeds, as well as see (and comment on) what everyone's reading.</p>
           <h4 class="feature-header">features:</h4>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <p class="feature-text">FeedMe single page Backbone.js app that consumes a Rails JSON API.</p>
+          <p class="feature-text">Uses redis and resque background workers to keep feeds up to date without sacrificing load time. Takes advantage of unicorn's multiple processes to maximize utilization of limited resources on the Heroku platform.</p>
+          <p class="feature-text">Takes advantage of event aggregation to implement a keyboard interface and flash message system that allows for communication accorss Backbone views.</p>
+          <p class="feature-text">Custom built  authentication system that leverages BCrypt for encrypting and uses ActiveMailer and Sendgrid for activation and password reset mailings.</p>
         </section>
       </section>
 
@@ -141,12 +140,12 @@
         <section class="project-text group">
           <h3 class="project-header">Asteroids</h3>
           <a href="#" class="back-link" data-page="back">back</a>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="description">An abstract, colorful take on the arcade classic.</p>
           <h4 class="feature-header">features:</h4>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <p class="feature-text">Written in HTML5/Canvas</p>
+          <p class="feature-text">Angle based movement that calculates future positions trigonometrically.</p>
+          <p class="feature-text">Uses closures to track objects state across iterations of the game loop.</p>
+          <p class="feature-text">Implements a modular animation system that alows building up of complex actions through passing components as callbacks.</p>
         </section>
       </section>
 
@@ -160,12 +159,12 @@
         <section class="project-text group">
           <h3 class="project-header">ReActiveRecord</h3>
           <a href="#" class="back-link" data-page="back">back</a>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="description">Uses metaprogramming to construct a lightweight Ruby implementation of an ActiveRecord-style ORM</p>
           <h4 class="feature-header">features:</h4>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <p class="feature-text">Reflects on database columns to generate accessors for the ORM's model.</p>
+          <p class="feature-text">Queries return relation objects that facilitate the lazy loading of results - minimizing actual calls to the database.</p>
+          <p class="feature-text">Implements model associations including: has_many, belongs_to, and has_one_through.</p>
+          <p class="feature-text">Implements Relation#include by storing the results of a query in a closure, and using #send and #define_method to build a method on the original model that  accesses the closure.</p>
         </section>
       </section>
 
@@ -179,12 +178,12 @@
         <section class="project-text group">
           <h3 class="project-header">chess</h3>
           <a href="#" class="back-link" data-page="back">back</a>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="description">A full-featured command-line implementation of chess. </p>
           <h4 class="feature-header">features:</h4>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <p class="feature-text">Uses the colorize gem and unicode to display the board to the terminal.</p>
+          <p class="feature-text">Can import or export a game state into an easy-to-read hash, making it easy to set up any initial position.</p>
+          <p class="feature-text">Takes advantage of object oriented design patterns to DRY out the code for pieces and movement.</p>
+          <p class="feature-text">Recursively duplicates the board to calculate the legality of possible moves.</p>
         </section>
       </section>
 
