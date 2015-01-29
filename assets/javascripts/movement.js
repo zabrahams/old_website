@@ -14,8 +14,7 @@
       $section = $("." + pageName);
       $old = $('.in');
 
-
-      if (!($section === $old)) {
+      if (!$section.is($old)) {
         Move.sliding = true;
         $old
           .addClass("out")
