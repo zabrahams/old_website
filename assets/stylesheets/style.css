@@ -73,6 +73,7 @@ body {
   display: block; }
 
 .page-header {
+  background: #545A5A;
   background-image: url("../images/chalkboard-black.jpg");
   font-family: 'Playfair Display';
   display: block;
@@ -191,6 +192,9 @@ h1 {
   margin-top: 20px;
   margin-bottom: 4px;
   margin-left: 40px; }
+  .circles .links {
+    margin-left: 22px;
+    width: 190px; }
 
 .single-pic {
   height: 160px;
