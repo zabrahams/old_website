@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./assets/stylesheets/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/vendor/font-awesome/css/font-awesome.css">
     <script src="./assets/vendor/jQuery.js"></script>
@@ -12,7 +13,7 @@
   <body>
       <section class="head-container group">
       <header class="page-header">
-        <h1>Zachary Abrahams</h1>
+        <span class="header-name"><h1><em>{</em>Zach Abrahams<em>}</em></h1></span>
         <nav class="header-nav group">
           <a href="#" id="about-link" class="header-nav-item" data-page="about">about</a>
           <a href="#" id="projects-link" class="header-nav-item" data-page="projects">projects</a>
@@ -21,7 +22,7 @@
         <ul class="contacts group">
 
           <li class="contact-item">
-            <a href="mailto:zachabrahams@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="mailto:zachabrahams@gmail.com"><i class="fa fa-send"></i></a>
           </li>
 
           <li class="contact-item">
@@ -40,11 +41,11 @@
       <section class="about page in group">
         <section class="circles group">
           <div class="circle"></div>
-          <img  class="single-pic" src="./assets/images/zach.jpg">
+          <img  class="single-pic" src="./assets/images/bw-zach.jpg">
           <div class="circle"></div>
         </section>
         <section class="about-section group">
-          <p class="about-para">I am a software developer fascinated with both front-end and backend web development. I have expertise with Ruby on Rails and Backbone.js</p>
+          <p class="about-para">I am a software developer fascinated with both front-end and back-end web development. I have expertise with Ruby on Rails and Backbone.js</p>
           <p class="about-para">I learned web development at <a href="http://appacademy.io">appacademy</a> an intensive program that accepts < 5% of applicants.</p>
           <p  class="about-para">I'm interested in using cutting-edge technology to affect real change in the world.</p>
       </section>
@@ -114,8 +115,8 @@
       <section class="page project feedme hide group">
         <section class="circles group">
           <img  class="single-pic" src="./assets/images/FeedMe1_crop.png">
-          <div class="circle"></div>
-          <img  class="single-pic" src="./assets/images/FeedMe1_crop.png">
+          <!-- <div class="circle"></div>
+          <img  class="single-pic" src="./assets/images/FeedMe1_crop.png"> -->
         </section>
 
         <section class="project-text group">
@@ -126,15 +127,15 @@
           <p class="feature-text">FeedMe is a single page Backbone.js app that consumes a Rails JSON API.</p>
           <p class="feature-text">Uses redis and resque background workers to keep feeds up to date without sacrificing load time. Takes advantage of unicorn's multiple processes to maximize utilization of limited resources on the Heroku platform.</p>
           <p class="feature-text">Implements a keyboard interface and flash message system using an event aggregator that allows for communication across Backbone views.</p>
-          <p class="feature-text">Custom built authentication system  leverages BCrypt for encryption and uses ActiveMailer and Sendgrid for activation and password reset mailings.</p>
+          <!-- <p class="feature-text">Custom built authentication system  leverages BCrypt for encryption and uses ActiveMailer and Sendgrid for activation and password reset mailings.</p> -->
         </section>
       </section>
 
       <section class="page project asteroids hide">
         <section class="circles group">
           <img  class="single-pic" src="./assets/images/aster_square.png">
-          <div class="circle"></div>
-          <img  class="single-pic" src="./assets/images/aster_square.png">
+          <!-- <div class="circle"></div>
+          <img  class="single-pic" src="./assets/images/aster_square.png"> -->
         </section>
 
         <section class="project-text group">
@@ -152,8 +153,8 @@
       <section class="page project reactive-record hide">
         <section class="circles group">
           <img class="single-pic" src="./assets/images/active_wider_crop.png">
-            <div class="circle"></div>
-            <img class="single-pic" src="./assets/images/active_wider_crop.png">
+            <!-- <div class="circle"></div>
+            <img class="single-pic" src="./assets/images/active_wider_crop.png"> -->
         </section>
 
         <section class="project-text group">
@@ -171,8 +172,8 @@
       <section class="page project chess hide">
         <section class="circles group">
           <img class="single-pic" src="./assets/images/chess_crop.png">
-          <div class="circle"></div>
-          <img class="single-pic" src="./assets/images/chess_crop.png">
+          <!-- <div class="circle"></div>
+          <img class="single-pic" src="./assets/images/chess_crop.png"> -->
         </section>
 
         <section class="project-text group">
