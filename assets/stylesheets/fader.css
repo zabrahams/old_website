@@ -1,0 +1,15 @@
+.hide {
+  display: none;
+}
+
+.vanish {
+  opacity: 0;
+  transition: opacity 400ms linear;
+  z-index: 0;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 400ms linear;
+}

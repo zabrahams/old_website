@@ -1,0 +1,13 @@
+.out {
+  left: -1000px;
+  transition: left 500ms linear;
+}
+
+.in {
+  left: 0;
+  transition: left 500ms linear;
+}
+
+.reset {
+  left: 1000px;
+}

@@ -40,19 +40,6 @@ img {
   clear: both;
   display: block; }
 
-section.hide {
-  display: none; }
-
-section.vanish {
-  opacity: 0;
-  transition: opacity 400ms linear;
-  z-index: 0; }
-
-.show {
-  display: block;
-  opacity: 1;
-  transition: opacity 400ms linear; }
-
 h2 {
   font-weight: bold;
   font-size: 36px;
@@ -124,22 +111,12 @@ body {
   top: 0;
   left: 1000px; }
 
-.out {
-  left: -1000px;
-  transition: left 500ms linear; }
-
-.in {
-  left: 0;
-  transition: left 500ms linear; }
-
-.reset {
-  left: 1000px; }
-
 /* header */
 .header-name {
   width: 505px;
   display: block;
-  margin: 20px auto; }
+  margin: 20px auto;
+  white-space: nowrap; }
 
 h1 {
   width: 840px;

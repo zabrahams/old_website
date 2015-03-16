@@ -4,9 +4,12 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./assets/stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/stylesheets/slider.css" type="text/css">
+    <link rel="stylesheet" href="./assets/stylesheets/fader.css" type="text/css">
     <link rel="stylesheet" href="./assets/vendor/font-awesome/css/font-awesome.css">
     <script src="./assets/vendor/jQuery.js"></script>
-    <script src="./assets/javascripts/movement.js"></script>
+    <script src="./assets/javascripts/slider.js"></script>
+    <script src="./assets/javascripts/fader.js"></script>
     <meta charset="utf-8">
     <title>Zachary Abrahams</title>
   </head>
@@ -51,7 +54,7 @@
       </section>
     </section>
 
-    <section class="projects page">
+    <section class="projects page fader">
 
       <section class="page project-index">
         <h2>Projects</h2>
@@ -61,7 +64,7 @@
           <li class="project-item">
             <h3>
               <a href="#" class= "project-link" data-page="feedme">
-                <img src="./assets/images/FeedMe1_crop.png">
+                <img src="./assets/images/mouth.svg">
                 <h4>FeedMe</h4>
               </a>
             </h3>
@@ -114,7 +117,7 @@
 
       <section class="page project feedme hide group">
         <section class="circles group">
-          <img  class="single-pic" src="./assets/images/FeedMe1_crop.png">
+          <img  class="single-pic" src="./assets/images/mouth.svg">
           <div class="links">
             <a href="http://feed--me.com">Live</a> |
             <a href="http://github.com/zachabrahams/FeedMe">GitHub</a>
@@ -203,6 +206,13 @@
       </section>
 
     </section>
+
+    <script>
+    $(function () {
+      $("nav").slider();
+      $(".fader").fader();
+    });
+    </script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
